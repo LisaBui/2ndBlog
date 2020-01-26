@@ -1,0 +1,46 @@
+  /* Allgemein */
+body {
+    text-align:justify;
+    width: 960px;
+    background-color: ghostwhite;
+    max-width: 90%;
+    margin: auto;
+    font-family: arial;
+}
+
+     /* transbox */
+
+div {
+    background-color: rgba(250,20,250,0.2);
+    padding: 5%;
+    border-radius: 20px;
+    border-style: outset;
+    border-color: white;
+    float: left;
+}
+    /* Bildergalerie */
+
+li {
+	display:inline-block;	
+	list-style-type: none;
+	width: 45%;
+    float: left;
+    padding: 5px;
+}
+
+img {	
+	width: 100%;
+}
+
+     /* Large screens */
+@media all and (min-width: 35em) {
+	li {
+		width: 12em;
+        float: left;
+	}
+
+	img {
+		width: 100%;
+	}
+
+}
