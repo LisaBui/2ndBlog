@@ -1,4 +1,4 @@
-     /* Allgemein */
+     /* general */
 body {
     text-align:justify;
     width: 960px;
@@ -8,7 +8,7 @@ body {
     font-family: arial;
 }
 
-     /* transbox */
+     /* box */
 
 div {
     background-color: rgba(250,20,250,0.2);
@@ -17,12 +17,12 @@ div {
     border-style: outset;
     border-color: lightgray;
 }
-    /* Gallery */
+    /* gallery */
 
 ul {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 li {
@@ -33,4 +33,13 @@ li {
 img {
     flex-basis: 150px;
     height: 125px;
+    filter: grayscale(100%);
+    transition: 1s;
+    padding: 15px 10px;
 }
+
+img:hover {
+    transform: scale(1.4);
+    filter:grayscale(0%);
+}
+
