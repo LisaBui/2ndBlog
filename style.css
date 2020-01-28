@@ -1,4 +1,4 @@
-  /* Allgemein */
+     /* Allgemein */
 body {
     text-align:justify;
     width: 960px;
@@ -15,32 +15,22 @@ div {
     padding: 5%;
     border-radius: 20px;
     border-style: outset;
-    border-color: white;
-    float: left;
+    border-color: lightgray;
 }
-    /* Bildergalerie */
+    /* Gallery */
+
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
 
 li {
-	display:inline-block;	
-	list-style-type: none;
-	width: 45%;
-    float: left;
-    padding: 5px;
+    list-style: none;
+
 }
 
-img {	
-	width: 100%;
-}
-
-     /* Large screens */
-@media all and (min-width: 35em) {
-	li {
-		width: 12em;
-        float: left;
-	}
-
-	img {
-		width: 100%;
-	}
-
+img {
+    flex-basis: 150px;
+    height: 125px;
 }
